@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Носов](https://up.htmlacademy.ru/htmlcss/18/user/490611).
-* Наставник: [Павел Фомин] (https://htmlacademy.ru/profile/id44744).
+* Наставник: [Павел Фомин](https://htmlacademy.ru/profile/id44744).
 
 ---
 
