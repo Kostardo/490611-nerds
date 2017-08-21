@@ -75,7 +75,7 @@
         <li>Мобильных приложений для IOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
-      <img src="#">
+      <img src="img/nerds-illustration.png" width="300" height="146" alt="Студия Nerds">
       <p class="percent-list-title">С 2004 года любим точность во всем:</p>
       <ul class="percent-list">
         <li><span class="percent">146%</span> уровень самоотдачи</li>
@@ -84,7 +84,7 @@
       </ul>
     </section>
     <section class="portfolio">
-      <a href="http://htmlacademy.ru" class="portfolio-img"><img src="#" alt="HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="portfolio-img"><img src="#" alt="HTML Academy"></a>
       <a href="#" class="portfolio-img"><img src="#" alt="Барбершоп «Бородинский»"></a>
       <a href="#" class="portfolio-img"><img src="#" alt="Оптика «PINK»"></a>
       <a href="#" class="portfolio-img"><img src="#" alt="«MISHKA»"></a>
@@ -110,13 +110,15 @@
     </section>
   </footer>
   <section class="feedback">
-    <div class="write_us">Напишите нам</div>
-    <div class="question">Ваше имя</div>
-    <div class="answer">Представьтесь, пожалуйста</div>
-    <div class="question">Ваш e-mail</div>
-    <div class="answer">Для отправки ответа</div>
-    <div class="question">Текст письма</div>
-    <div class="answer">В свободной форме</div>
+    <form action="#" method="post">
+      <label for="login-field">Ваш логин:
+        <input type="text" name="login" id="login-field" value="Представьтесь пожалуйста"></label>
+      <label for="mail-field">Ваш e-mail:
+        <input type="text" name="e-mail" id="mail-field" value="Для отправки ответа"></label><br>
+      <label for="message-field">Текст письма:
+				<textarea id="message-field" name="message" rows="10" cols="10">В свободной форме</textarea></label><br>
+      <button type="submit">Отправить</button>
+    </form>
   </section>
 </body>
 
