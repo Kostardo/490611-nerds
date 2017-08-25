@@ -31,6 +31,7 @@ a {
   color: #000000;
 
   list-style: none;
+  flex-basis: 800px
 }
 
 .site-navigation {
@@ -50,22 +51,29 @@ a {
   color: #a6a6a6;
 }
 
-.site-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-right: auto;
-}
-
 .container,
 .main-header {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 47px;
+}
+
+.item-list:last-child {
+margin-left: auto;
+margin-right: 20px;
 }
 
 .slide-title {
@@ -82,11 +90,9 @@ a {
 }
 
 .main-header-logo {
-  float: left;
   width: 160px;
   height: 65px;
   margin-top: 49px;
-  margin-right: 202px;
 }
 
 
@@ -99,7 +105,7 @@ a {
   list-style: none;
 }
 
-.services-list h3{
+.services-title{
   margin: 0;
   margin-top: 26px;
   margin-bottom: 28px;
@@ -109,7 +115,6 @@ a {
 }
 
 .services-block {
-  position: relative;
   width: 360px;
   min-height: 350;
   margin: 0;
@@ -117,7 +122,7 @@ a {
   list-style: none;
 }
 
-.services-block p {
+.services-text{
   width: 250px;
   margin: 0;
   margin-top: 28px;
@@ -192,7 +197,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  position: relative;
   margin: 0 auto;
   padding: 0;
   min-height: 525px;
@@ -230,7 +234,6 @@ a {
 
 .about-list li {
   list-style: none;
-  position: relative;
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
