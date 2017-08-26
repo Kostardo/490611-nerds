@@ -52,8 +52,9 @@ a {
 }
 
 .container,
-.main-header {
-  width: 1160px;
+.main-header,
+.slider {
+  width: 1440px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -69,6 +70,11 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   margin-right: 47px;
+  margin-top: 83px;
+}
+
+.item-list {
+  margin-right: 48px;
 }
 
 .item-list:last-child {
@@ -93,8 +99,34 @@ margin-right: 20px;
   width: 160px;
   height: 65px;
   margin-top: 49px;
+  margin-left: 140px;
 }
 
+.slide-title {
+  margin-left: 140px;
+  margin-top: 85px;
+}
+
+.slide-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 140px;
+  margin-top: 28px;
+  display: block;
+  width: 460px;
+}
+
+.slide-btn {
+  width: 240px;
+  margin-bottom: 80px;
+  margin-left: 140px;
+}
+
+.first-slide {
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
 
 .services-list {
   display: flex;
@@ -105,7 +137,7 @@ margin-right: 20px;
   list-style: none;
 }
 
-.services-title{
+.service-title{
   margin: 0;
   margin-top: 26px;
   margin-bottom: 28px;
@@ -115,10 +147,11 @@ margin-right: 20px;
 }
 
 .services-block {
-  width: 360px;
-  min-height: 350;
+  width: 300px;
   margin: 0;
-  padding: 0;
+  margin-left: 140px;
+  margin-top: 80px;
+
   list-style: none;
 }
 
