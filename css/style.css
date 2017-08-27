@@ -51,15 +51,25 @@ a {
   color: #a6a6a6;
 }
 
-.container,
 .main-header,
 .slider {
-  width: 1440px;
+  color: #283136;
+  background-color: #eee;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: .8;
+}
+
+.main-header-logo:active {
+  opacity: .3;
 }
 
 .site-navigation {
@@ -70,7 +80,6 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   margin-right: 47px;
-  margin-top: 83px;
 }
 
 .item-list {
@@ -87,12 +96,6 @@ margin-right: 20px;
   line-height: 55px;
   font-weight: medium;
   color: #000000;
-}
-
-.main-header,
-.slider {
-  color: #283136;
-  background-color: #eee;
 }
 
 .main-header-logo {
@@ -129,9 +132,11 @@ margin-right: 20px;
 }
 
 .services-list {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-left: 220px;
   margin-top: 30px;
   padding: 0;
   list-style: none;
@@ -257,12 +262,39 @@ margin-right: 20px;
 .list-title {
  font-weight: 700;
  text-transform: uppercase;
+ color: #000;
 }
 
 .about-list {
   margin: 0;
   margin-left: 35px;
   padding: 0;
+}
+
+.percent-list-title {
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.percent-list th {
+  font-weight: 400px;
+  line-height: 18px;
+  padding: 5px;
+  text-align: left;
+}
+
+.percent-list td {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 5px;
+  text-align: left;
+  color: #000;
+}
+
+.percent-list sup {
+  vertical-align: bottom;
 }
 
 .about-list li {
@@ -273,4 +305,70 @@ margin-right: 20px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+}
+
+.potrfolio-img {
+  opacity: .2;
+}
+
+.portfolio-img:hover,
+.portfolio-img:focus {
+  opacity: 1.0;
+}
+
+.portfolio-img:active {
+  opacity: .1;
+}
+
+.map {
+  width: 100%;
+  height: 416px;
+  margin: 0 auto;
+  background-color: #f1efe8;
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+}
+
+.contacts {
+  width: 270px;
+  height: 251px;
+  margin-top: 54px;
+  margin-left: 20px;
+  padding-top: 57px;
+  padding-left: 50px;
+  background-color: #fff;
+}
+
+.contacts-name {
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.contacts-adress,
+.contacts-phone {
+  line-height: 18px;
+}
+
+.map-marker {
+  width: 300px;
+  height: 190px;
+  margin-top: -230px;
+  margin-left: 983px;
+  background-image: url('../img/map-marker.png');
+}
+
+.feedback h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #000;
+}
+
+.container fieldset {
+  border: none;
 }

@@ -31,14 +31,17 @@
     <form action="#" method="get">
       <fieldset>
         <legend>Стоимость:</legend>
-        <div class="price-controls">
-          <div class="price-slidebar">
-            <div class="slidebar"></div>
-            <div class="slide-left"></div>
-            <div class="slide-right"></div>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
           </div>
-          <label class="min-price">ОТ<input name="min-price" type="text" value="0"></label>
-          <label class="max-price">ДО<input name="max-price" type="text" value="15000"></label>
+          <div class="price-controls">
+            от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15 000">
+          </div>
         </div>
       </fieldset>
       <fieldset>
