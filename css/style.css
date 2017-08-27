@@ -26,6 +26,9 @@ a {
 }
 
 .main-navigation {
+  width: 1200px;
+  margin: 83px auto;
+  padding: 0;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -55,12 +58,18 @@ a {
 .slider {
   color: #283136;
   background-color: #eee;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.slide {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-header-logo:hover,
@@ -102,27 +111,30 @@ margin-right: 20px;
   width: 160px;
   height: 65px;
   margin-top: 49px;
-  margin-left: 140px;
+  margin-right: 202px;
 }
 
 .slide-title {
-  margin-left: 140px;
+  width: 380px;
+  margin-left: 20px;
   margin-top: 85px;
 }
 
 .slide-text {
   font-size: 16px;
   line-height: 24px;
-  margin-left: 140px;
+  margin-left: 20px;
   margin-top: 28px;
   display: block;
-  width: 460px;
+  width: 363px;
 }
 
 .slide-btn {
   width: 240px;
+  font-size: 16px;
+  line-height: 18px;
   margin-bottom: 80px;
-  margin-left: 140px;
+  margin-left: 20px;
 }
 
 .first-slide {
@@ -131,12 +143,17 @@ margin-right: 20px;
   background-position: right;
 }
 
-.services-list {
+.services {
   width: 1200px;
+  margin: auto;
+  padding: 0;
+  }
+
+.services-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-left: 220px;
+  margin-left: 20px;
   margin-top: 30px;
   padding: 0;
   list-style: none;
@@ -232,7 +249,15 @@ margin-right: 20px;
 }
 
 .info {
+  width: 1200px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about {
+  width: 660px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   margin: 0 auto;
@@ -270,6 +295,11 @@ margin-right: 20px;
   margin-left: 35px;
   padding: 0;
 }
+
+.percent-list {
+  display: flex;
+  flex-direction: column;
+  }
 
 .percent-list-title {
   font-weight: 700;
