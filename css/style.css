@@ -340,7 +340,8 @@ a {
 }
 
 .map {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 416px;
   margin: 0 auto;
   background-color: #f1efe8;
@@ -453,6 +454,40 @@ a {
   color: #000;
 }
 
-.container fieldset {
-  border: none;
+.catalog-title {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 85px;
+  padding-bottom: 117px;
+  padding-left: 239px;
+}
+
+.container-catalog {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left-column {
+  width: 260px;
+  padding: 0 20px;
+}
+
+.right-column {
+  width: 920px;
+  padding-right: 20px;
+  padding-left: 140px;
+}
+
+.sorting {
+  display: flex;
+}
+
+.sorting-title {
+  display: flex;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
 }
