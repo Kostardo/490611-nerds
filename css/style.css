@@ -459,7 +459,7 @@ a {
   margin: 0 auto;
   padding-top: 85px;
   padding-bottom: 117px;
-  padding-left: 239px;
+  text-align: center;
 }
 
 .container-catalog {
@@ -489,5 +489,34 @@ a {
 
 .items {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.item-description {
+  display: none;
+  text-align: center;
+}
+
+.item-card:hover .item-description {
+  display: block;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.item-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.pages {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
