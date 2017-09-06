@@ -503,8 +503,13 @@ a {
 }
 
 .browser {
+  opacity: .12;
   position: absolute;
   top: -40px;
+}
+
+.browser:active {
+  opacity: .12
 }
 
 .item-description {
@@ -519,6 +524,10 @@ a {
 
 .item-card:hover .item-description {
   display: block;
+}
+
+.item-card:hover .browser {
+  opacity: 1.0;
 }
 
 .item-title {
