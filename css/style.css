@@ -473,7 +473,7 @@ a {
 }
 
 .left-column {
-  width: 260px;
+  width: 300px;
   padding: 0 20px;
 }
 
@@ -503,6 +503,7 @@ a {
 }
 
 .browser {
+  width: 100%;
   opacity: .12;
   position: absolute;
   top: -40px;
@@ -547,4 +548,72 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  width: 260px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  background: #eeeeee;
+  border-radius: 5px;
+  overflow: hidden;
+  }
+
+  .range-controls .scale {
+  margin-top: 39px;
+  height: 2px;
+  background: #dfe2e3;
+}
+
+.range-controls .bar {
+  height: 2px;
+  width: 122px;
+  background: #4fd69d;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background: #4fd69d;
+}
+
+.max-toggle {
+  left: 122px;
+}
+
+.price-controls {
+  width: 260px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 80px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  border: none;
+  background: #eeeeee;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.filter-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-elements {
+  border: none;
 }
