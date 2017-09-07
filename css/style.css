@@ -99,6 +99,7 @@ a {
   width: 160px;
   height: 70px;
   padding: 0 20px;
+  margin-right: 202px;
 }
 
 .slide-text {
@@ -478,28 +479,50 @@ a {
 }
 
 .right-column {
-  width: 920px;
-  padding-right: 20px;
-  padding-left: 140px;
+  box-sizing: border-box;
+  width: 900px;
+  padding: 0 20px;
 }
 
 .sorting {
   display: flex;
+  margin-top: 60px;
 }
 
 .sorting-title {
   display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sorting-func {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sorting-text {
+  margin-right: 26px;
 }
 
 .items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 59px;
 }
 
 .item-card {
-  width: 360px;
-  position: relative;
+ width: 360px;
+ position: relative;
+ height: 614px;
+ margin-bottom: 34px;
+ margin-right: 40px;
+}
+
+.item-card img {
+ display: block;
 }
 
 .browser {
@@ -551,9 +574,11 @@ a {
 }
 
 .range-controls {
+  margin-top: 133px;
+  box-sizing: border-box;
   position: relative;
   height: 80px;
-  width: 260px;
+  width: 300px;
   margin-bottom: 20px;
   padding: 0 20px;
   background: #eeeeee;
@@ -589,6 +614,7 @@ a {
 }
 
 .price-controls {
+  box-sizing: border-box;
   width: 260px;
   display: flex;
   flex-wrap: nowrap;
@@ -597,6 +623,7 @@ a {
 }
 
 .price-controls input {
+  box-sizing: border-box;
   width: 80px;
   padding: 10px 10px;
   margin-left: 10px;
@@ -616,4 +643,12 @@ a {
 
 .filter-elements {
   border: none;
+}
+
+.line {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 2px;
+  background-color: #eeeeee;
 }
