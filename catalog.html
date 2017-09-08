@@ -21,7 +21,7 @@
           <li class="item-list"><a href="clients.html">Клиенты</a></li>
           <li class="item-list"><a href="catalog.html">Магазин</a></li>
           <li class="item-list"><a href="contacts.html">Контакты</a></li>
-          <li class="item-list cart"><a href="#"><img src="img/cart-icon.svg" width="15" height="15"> Корзина</a>
+          <li class="item-list cart"><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSI0LjUiIGN5PSIxMy41IiByPSIxLjUiLz48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSIxMi41IiBjeT0iMTMuNSIgcj0iMS41Ii8+PHBhdGggZmlsbD0iI2E2YTZhNiIgZD0iTTE1IDJINC4wN2wtLjQyMi0ySDB2MmgyLjAzMWwxLjk4NSA5SDE1VjlIOS40NDFMMTUgNi45NTF6Ii8+PC9zdmc+Cg==" width="15" height="15"> Корзина</a>
           </li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
     <div class="left-column">
       <form action="#" method="get">
         <fieldset class="filter-elements">
-          <legend class="filter-title price">Стоимость:</legend>
+          <legend class="filter-title filter-price">Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -52,19 +52,27 @@
         <fieldset class="filter-elements">
           <legend class="filter-title">Сетка:</legend>
           <ul class="filter-option">
-            <li><input type="radio" name="type-site" value="adaptiv"> Адаптивная</li>
-            <li><input type="radio" name="type-site" value="fixed"> Фиксировнная</li>
-            <li><input type="radio" name="type-site" value="gum"> Резиновая</li>
+            <label for="adaptiv">
+            <li><input type="radio" name="type-site" value="adaptiv" id="adaptiv"> Адаптивная</li> </label>
+            <label for="fixed">
+            <li><input type="radio" name="type-site" value="fixed" id="fixed"> Фиксировнная</li> </label>
+            <label for="gum">
+            <li><input type="radio" name="type-site" value="gum" id="gum"> Резиновая</li> </label>
           </ul>
         </fieldset>
-        <fieldset class="filter-elements">
+        <fieldset class="filter-checkbox">
           <legend class="filter-title">Особенности:</legend>
           <ul class="filter-option">
-            <li><input class="checkbox" type="checkbox" name="features-1" checked> Слайдер</li>
-            <li><input class="checkbox" type="checkbox" name="features-2"> Блок преимуществ</li>
-            <li><input class="checkbox" type="checkbox" name="features-3" checked> Новости</li>
-            <li><input class="checkbox" type="checkbox" name="features-4"> Галерея</li>
-            <li><input class="checkbox" type="checkbox" name="features-5"> Корзина</li>
+            <label for="features-1">
+            <li><input class="checkbox" type="checkbox" name="features-1" id="features-1" checked> Слайдер</li> </label>
+            <label for="features-1">
+            <li><input class="checkbox" type="checkbox" name="features-2" id="features-2"> Блок преимуществ</li> </label>
+            <label for="features-1">
+            <li><input class="checkbox" type="checkbox" name="features-3" id="features-3" checked> Новости</li> </label>
+            <label for="features-1">
+            <li><input class="checkbox" type="checkbox" name="features-4" id="features-4"> Галерея</li> </label>
+            <label for="features-1">
+            <li><input class="checkbox" type="checkbox" name="features-5" id="features-5"> Корзина</li> </label>
           </ul>
         </fieldset>
         <button type="submit" class="btn btn-gray">Показать</button>
@@ -74,7 +82,7 @@
       <section class="sorting">
         <p class="sorting-title">Сортировать:</p>
         <ul class="sorting-func">
-          <li><a href="#" class="sorting-text">По цене</a></li>
+          <li><a href="#" class="sorting-text sorting-cost">По цене</a></li>
           <li><a href="#" class="sorting-text">По типу</a></li>
           <li><a href="#" class="sorting-text">По названию</a></li>
         </ul>
