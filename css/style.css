@@ -477,6 +477,16 @@ a {
   display: flex;
 }
 
+.activated {
+  display: flex;
+  flex-flow: column;
+}
+.shop-active {
+  width: 74px;
+  height: 2px;
+  background-color: red;
+}
+
 .left-column {
   width: 300px;
   padding: 0 20px;
@@ -500,6 +510,7 @@ a {
 }
 
 .sorting-func {
+  width: 800px;
   display: flex;
   list-style: none;
   text-transform: uppercase;
@@ -516,6 +527,14 @@ a {
 
 .sorting-cost {
   opacity: 1;
+}
+
+.icon-down {
+  background-image: url(img/icon-down-dir.svg);
+}
+
+.icon-up {
+  background-image: url(img/icon-up-dir.svg);
 }
 
 .items {
@@ -540,8 +559,6 @@ a {
 .browser {
   width: 100%;
   opacity: .12;
-  position: absolute;
-  top: -40px;
 }
 
 .browser:active {
@@ -577,6 +594,16 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+}
+
+.item-btn {
+  padding-bottom: 43px;
+}
+
+.description-field {
+  width: 240px;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .pages {
@@ -686,6 +713,44 @@ a {
   margin-right: 30px;
   position:absolute;
   border-color: #eeeeee;
+}
+
+.pages {
+  display:flex;
+  justify-content: space-between;
+  width: 460px;
+  font-weight: 500;
+  color: #000;
+}
+
+.active-page {
+  width: 44px;
+  height: 44px;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 44px;
+  border-width: 3px;
+}
+
+.page {
+  background-color: #eeeeee;
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 44px;
+  border-width: 3px;
+}
+
+.page-next {
+  width:260px;
+  height: 47px;
+  background-color: #eeeeee;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 3px;
 }
 
 /* .filter-elements input[type=radio]:checked + label:before {

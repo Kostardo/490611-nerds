@@ -19,7 +19,10 @@
         <ul class="site-navigation">
           <li class="item-list"><a href="about.html">Студия</a></li>
           <li class="item-list"><a href="clients.html">Клиенты</a></li>
-          <li class="item-list"><a href="catalog.html">Магазин</a></li>
+          <div class="activated">
+            <li class="item-list"><a href="catalog.html">Магазин</a></li>
+            <div class="shop-active"></div>
+          </div>
           <li class="item-list"><a href="contacts.html">Контакты</a></li>
           <li class="item-list cart"><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSI0LjUiIGN5PSIxMy41IiByPSIxLjUiLz48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSIxMi41IiBjeT0iMTMuNSIgcj0iMS41Ii8+PHBhdGggZmlsbD0iI2E2YTZhNiIgZD0iTTE1IDJINC4wN2wtLjQyMi0ySDB2MmgyLjAzMWwxLjk4NSA5SDE1VjlIOS40NDFMMTUgNi45NTF6Ii8+PC9zdmc+Cg==" width="15" height="15"> Корзина</a>
           </li>
@@ -53,11 +56,11 @@
           <legend class="filter-title">Сетка:</legend>
           <ul class="filter-option">
             <label for="adaptiv">
-            <li><input type="radio" name="type-site" value="adaptiv" id="adaptiv"> Адаптивная</li> </label>
+            <li class="filter-radio"><input type="radio" name="type-site" value="adaptiv" id="adaptiv"> Адаптивная</li> </label>
             <label for="fixed">
-            <li><input type="radio" name="type-site" value="fixed" id="fixed"> Фиксировнная</li> </label>
+            <li class="filter-radio"><input type="radio" name="type-site" value="fixed" id="fixed"> Фиксировнная</li> </label>
             <label for="gum">
-            <li><input type="radio" name="type-site" value="gum" id="gum"> Резиновая</li> </label>
+            <li class="filter-radio"><input type="radio" name="type-site" value="gum" id="gum"> Резиновая</li> </label>
           </ul>
         </fieldset>
         <fieldset class="filter-checkbox">
@@ -79,18 +82,20 @@
       </form>
     </div>
     <section class="right-column">
-      <section class="sorting">
+      <sefpagction class="sorting">
         <p class="sorting-title">Сортировать:</p>
         <ul class="sorting-func">
           <li><a href="#" class="sorting-text sorting-cost">По цене</a></li>
           <li><a href="#" class="sorting-text">По типу</a></li>
           <li><a href="#" class="sorting-text">По названию</a></li>
+          <li><img src="#" width="11px" height="10px" class="down"></li>
+          <li><img src="#" width="11px" height="10px" class="up"></li>
         </ul>
         <div class="sorting-controls">
           <a href="#" class="icon-down"></a>
           <a href="#" class="icon-up"></a>
         </div>
-      </section>
+      </sefpagction>
       <section class="items">
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
