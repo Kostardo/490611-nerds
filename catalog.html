@@ -24,7 +24,7 @@
             <div class="shop-active"></div>
           </div>
           <li class="item-list"><a href="contacts.html">Контакты</a></li>
-          <li class="item-list cart"><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSI0LjUiIGN5PSIxMy41IiByPSIxLjUiLz48Y2lyY2xlIGZpbGw9IiNhNmE2YTYiIGN4PSIxMi41IiBjeT0iMTMuNSIgcj0iMS41Ii8+PHBhdGggZmlsbD0iI2E2YTZhNiIgZD0iTTE1IDJINC4wN2wtLjQyMi0ySDB2MmgyLjAzMWwxLjk4NSA5SDE1VjlIOS40NDFMMTUgNi45NTF6Ii8+PC9zdmc+Cg==" width="15" height="15"> Корзина</a>
+          <li class="item-list cart"><a href="cart.html">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -48,108 +48,131 @@
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15 000">
+                <label for="min-price">
+                  от<input class="min-price" id="min-price" type="text" value="0">
+                </label>
+                <label for="max-price">
+                    до<input id="max-price" class="max-price" type="text" value="15 000">
+                </label>
             </div>
           </div>
         </fieldset>
         <fieldset class="filter-elements">
           <legend class="filter-title">Сетка:</legend>
-          <ul class="filter-option">
-            <label for="adaptiv">
-            <li class="filter-radio"><input type="radio" name="type-site" value="adaptiv" id="adaptiv"> Адаптивная</li> </label>
-            <label for="fixed">
-            <li class="filter-radio"><input type="radio" name="type-site" value="fixed" id="fixed"> Фиксировнная</li> </label>
-            <label for="gum">
-            <li class="filter-radio"><input type="radio" name="type-site" value="gum" id="gum"> Резиновая</li> </label>
-          </ul>
+          <div class="filter-option">
+            <label class="label-radio" for="adaptiv">
+                <input type="radio" name="type-site" value="adaptiv" id="adaptiv">Адаптивная
+            </label>
+            <label class="label-radio" for="fixed">
+                <input type="radio" name="type-site" value="fixed" id="fixed">Фиксировнная
+            </label>
+            <label class="label-radio" for="gum">
+                <input type="radio" name="type-site" value="gum" id="gum">Резиновая
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="filter-checkbox">
+        <fieldset class="filter-elements">
           <legend class="filter-title">Особенности:</legend>
-          <ul class="filter-option">
-            <label for="features-1">
-            <li><input class="checkbox" type="checkbox" name="features-1" id="features-1" checked> Слайдер</li> </label>
-            <label for="features-1">
-            <li><input class="checkbox" type="checkbox" name="features-2" id="features-2"> Блок преимуществ</li> </label>
-            <label for="features-1">
-            <li><input class="checkbox" type="checkbox" name="features-3" id="features-3" checked> Новости</li> </label>
-            <label for="features-1">
-            <li><input class="checkbox" type="checkbox" name="features-4" id="features-4"> Галерея</li> </label>
-            <label for="features-1">
-            <li><input class="checkbox" type="checkbox" name="features-5" id="features-5"> Корзина</li> </label>
-          </ul>
+            <div class="filter-option">
+                <label for="features-1">
+                    <input class="checkbox" type="checkbox" name="features-1" id="features-1" checked>Слайдер
+                </label>
+                <label for="features-2">
+                    <input class="checkbox" type="checkbox" name="features-2" id="features-2">Блок преимуществ
+                </label>
+                <label for="features-3">
+                    <input class="checkbox" type="checkbox" name="features-3" id="features-3" checked>Новости
+                </label>
+                <label for="features-4">
+                    <input class="checkbox" type="checkbox" name="features-4" id="features-4">Галерея
+                </label>
+                <label for="features-5">
+                    <input class="checkbox" type="checkbox" name="features-5" id="features-5">Корзина
+                </label>
+            </div>
         </fieldset>
         <button type="submit" class="btn btn-gray">Показать</button>
       </form>
     </div>
     <section class="right-column">
-      <sefpagction class="sorting">
+      <section class="sorting">
         <p class="sorting-title">Сортировать:</p>
         <ul class="sorting-func">
           <li><a href="#" class="sorting-text sorting-cost">По цене</a></li>
           <li><a href="#" class="sorting-text">По типу</a></li>
           <li><a href="#" class="sorting-text">По названию</a></li>
-          <li><img src="#" width="11px" height="10px" class="down"></li>
-          <li><img src="#" width="11px" height="10px" class="up"></li>
         </ul>
         <div class="sorting-controls">
           <a href="#" class="icon-down"></a>
           <a href="#" class="icon-up"></a>
         </div>
-      </sefpagction>
+      </section>
       <section class="items">
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-sedona.jpg" width="358" height="574" alt="Sedona">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">Sedona</p>
             <p class="item-text">Информационный сайт для туристов</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
           </div>
+        </div>
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-pink.jpg" width="358" height="574" alt="Pink app">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">Pink app</p>
             <p class="item-text">Продуктовый лендинг приложения для IOS и Android</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
           </div>
+        </div>
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-barbershop.jpg" width="358" height="574" alt="Barbershop">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">Barbershop</p>
             <p class="item-text">Сайт салоны красоты. Для мужчин, да.</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
           </div>
+        </div>
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-mishka.jpg" width="358" height="574" alt="Mishka">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">Mishka</p>
             <p class="item-text">Интернет-магазин вязаных игрушек</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
           </div>
+        </div>
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-aplus.jpg" width="358" height="574" alt="A plus">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">A plus</p>
             <p class="item-text">Лендинг курсов для повышения квалификации</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
           </div>
+        </div>
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-kvast.jpg" width="358" height="574" alt="Кваст">
           <div class="item-description">
+            <div class="description-field">
             <p class="item-title">Кваст</p>
             <p class="item-text">Промо-сайт производителя крафтового кваса</p>
             <a href="#" class="item-btn btn">9 900 руб.</a>
-          </div>
+          </div
+        </div>
         </section>
       </section>
       <section class="pages">
