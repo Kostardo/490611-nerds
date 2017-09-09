@@ -364,6 +364,14 @@ a {
   font-weight: 500;
 }
 
+.about-list li::before {
+  width: 15px;
+  height: 2px;
+  background-color: #fb565a;
+  content: "";
+  display: inline-block;
+}
+
 .portfolio {
   width: 1200px;
   margin: 0 auto;
@@ -868,4 +876,50 @@ input[type=checkbox]:checked + label:before {
 
 .feedback {
   display: none;
+}
+
+.feedback-active {
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  margin: -480px 0 0 -480px;
+  width: 960px;
+  height: 590px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.feedback-title {
+  padding: 0 40px;
+}
+
+.feedback-content {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.feedback-name {
+  width: 360px;
+  padding: 0 40px;
+}
+
+.feedback-email {
+  width: 360px;
+}
+
+.feedback-message {
+  width: 760px;
+}
+
+.feedback-close {
+  content: "";
+  width: 20px;
+  height: 23px;
+  display: inline-block;
+  background: url('../img/close-cross.svg') no-repeat;
+  padding-right: 26px;
+  border: 0;
+  opacity: 0.2;
 }
