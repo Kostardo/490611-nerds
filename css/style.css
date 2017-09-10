@@ -928,19 +928,62 @@ input[type=checkbox]:checked + label:before {
 
 .feedback-active {
   display: block;
-  position: absolute;
-  background-color: white;
+  position: fixed;
+  background-color:#ffffff;
   top: 50%;
   left: 50%;
   margin: -480px 0 0 -480px;
   width: 960px;
   height: 590px;
-  border-style: solid;
-  border-width: 1px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+  z-index: 300;
+
+}
+
+.feedback label {
+  display: grid;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 0 40px;
+  margin-top: 31px;
+}
+
+.feedback-active input[type="text"] {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  height: 47px;
+  width: 356px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  vertical-align: top;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.feedback-active textarea {display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  height: 114px;
+  width: 760px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  vertical-align: top;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.about-user {
+  display: flex;
+  margin-right: 40px;
 }
 
 .feedback-title {
   padding: 0 40px;
+  margin-top: 74px;
 }
 
 .feedback-content {
@@ -948,26 +991,27 @@ input[type=checkbox]:checked + label:before {
   margin: 0 auto;
 }
 
-.feedback-name {
-  width: 360px;
-  padding: 0 40px;
-}
-
-.feedback-email {
-  width: 360px;
-}
-
-.feedback-message {
-  width: 760px;
-}
-
 .feedback-close {
   content: "";
   width: 20px;
   height: 23px;
-  display: inline-block;
   background: url('../img/close-cross.svg') no-repeat;
   padding-right: 26px;
   border: 0;
   opacity: 0.2;
+  position: absolute;
+  margin-left: 790px;
+  margin-top: -70px;
+}
+
+.feedback-close:hover,
+.feedback-close:focus {
+  opacity: 1;
+}
+.feedback-close:active {
+  opacity: 0.1;
+}
+
+.feedback .btn {
+  margin-left: 40px;
 }
