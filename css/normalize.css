@@ -35,8 +35,9 @@ aside,
 footer,
 header,
 nav,
-section {
+section,div {
   display: block;
+  box-sizing: border-box;
 }
 
 /**
