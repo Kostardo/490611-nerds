@@ -934,7 +934,7 @@ a {
 }
 
 .filter-elements input:disabled+label {
-  opacity: 0.3;
+  color: rgba(40,49,54,0.3);
 }
 
 .filter-elements input[type=radio]:checked+label:before {
