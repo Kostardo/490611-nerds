@@ -28,20 +28,25 @@
     <main class="container">
       <h1 class="visually-hidden">Студия Nёrds</h1>
       <section class="slider">
-        <div class="first-slide slide visually-hidden">
+        <div class="first-slide slide">
           <p class="slide-title">Долго, дорого, скрупулезно.</p>
           <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
         </div>
         <div class="second-slide slide visually-hidden">
-          <p class="second-slide-title">Любим математику как никто другой</p>
-          <p class="second-slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+          <p class="second-slide-title slide-title">Любим математику как никто другой.</p>
+          <p class="second-slide-text slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
           <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
         </div>
-        <div class="third-slide slide ">
-          <p class="third-slide-title">Только ночь, только хардкор</p>
-          <p class="third-slide-text">Работать днем, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
+        <div class="third-slide slide visually-hidden">
+          <p class="third-slide-title slide-title">Только ночь, только хардкор.</p>
+          <p class="slide-text third-slide-text">Работать днем, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
           <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
+        </div>
+        <div class="slide-controls">
+          <div class="active-slide-control"></div>
+          <div></div>
+          <div></div>
         </div>
   </div>
   </section>
@@ -109,8 +114,8 @@
         <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
         <a href="#" class="btn-red btn feedback-btn">Напишите нам</a>
     </div>
-    </section>
     <div class="map-marker"></div>
+    </section>
   </section>
   <footer class="footer">
     <section class="social">
@@ -127,21 +132,22 @@
   </footer>
   <section class="feedback">
     <div class="feedback-content">
-    <h2 class="feedback-title">Напишите нам</h2>
-    <button class="feedback-close" type="button"></button>
-    <form action="#" method="post">
-      <div class="about-user">
-      <label for="login-field">Вашe имя:
-        <input type="text" name="login" id="login-field" placeholder="  Представьтесь пожалуйста" class="feedback-name"></label>
-      <label for="mail-field">Ваш e-mail:
-        <input type="text" name="e-mail" id="mail-field" placeholder="  Для отправки ответа" class="feedback-email"></label><br>
-      </div>
-      <label for="message-field">Текст письма:
-				<textarea id="message-field" name="message" rows="10" cols="10" placeholder="  В свободной форме" class="feedback-message"></textarea></label><br>
-      <button type="submit" class="btn btn-red">Отправить</button>
-    </form>
-  </div>
+      <h2 class="feedback-title">Напишите нам</h2>
+      <button class="feedback-close" type="button"></button>
+      <form action="#" method="post">
+        <div class="about-user">
+          <label for="login-field">Вашe имя:
+           <input type="text" name="login" id="login-field" placeholder="Представьтесь пожалуйста" class="feedback-name"></label>
+          <label for="mail-field">Ваш e-mail:
+           <input type="text" name="e-mail" id="mail-field" placeholder="Для отправки ответа" class="feedback-email"></label><br>
+        </div>
+        <label for="message-field">Текст письма:
+				<textarea id="message-field" name="message" rows="10" cols="10" placeholder="В свободной форме" class="feedback-message"></textarea></label><br>
+        <button type="submit" class="btn btn-red">Отправить</button>
+      </form>
+    </div>
   </section>
 </body>
-  <script src="js/popup.js"></script>
+<script src="js/popup.js"></script>
+
 </html>

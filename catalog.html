@@ -38,7 +38,7 @@
   <div class="container-catalog">
     <div class="left-column">
       <form action="#" method="get">
-        <fieldset class="filter-elements">
+        <fieldset class="filter-elements price-group">
           <legend class="filter-title filter-price">Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
@@ -58,38 +58,46 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="filter-elements">
+        <fieldset class="filter-elements grid-group">
           <legend class="filter-title">Сетка:</legend>
           <div class="filter-option">
+            <input type="radio" name="type-site" value="adaptiv" id="adaptiv">
             <label class="label-radio" for="adaptiv">
-                <input type="radio" name="type-site" value="adaptiv" id="adaptiv">Адаптивная
+                <span>Адаптивная</span>
             </label>
+            <input type="radio" name="type-site" value="fixed" id="fixed">
             <label class="label-radio" for="fixed">
-                <input type="radio" name="type-site" value="fixed" id="fixed">Фиксировнная
+                <span>Фиксировнная</span>
             </label>
+            <input type="radio" name="type-site" value="gum" id="gum">
             <label class="label-radio" for="gum">
-                <input type="radio" name="type-site" value="gum" id="gum">Резиновая
+                <span>Резиновая</span>
             </label>
           </div>
         </fieldset>
-        <fieldset class="filter-elements">
+        <fieldset class="filter-elements features-group">
           <legend class="filter-title">Особенности:</legend>
           <div class="filter-option">
-            <label for="features-1">
-                    <input class="checkbox" type="checkbox" name="features-1" id="features-1" checked>Слайдер
-                </label>
-            <label for="features-2">
-                    <input class="checkbox" type="checkbox" name="features-2" id="features-2">Блок преимуществ
-                </label>
-            <label for="features-3">
-                    <input class="checkbox" type="checkbox" name="features-3" id="features-3" checked>Новости
-                </label>
-            <label for="features-4">
-                    <input class="checkbox" type="checkbox" name="features-4" id="features-4">Галерея
-                </label>
-            <label for="features-5">
-                    <input class="checkbox" type="checkbox" name="features-5" id="features-5">Корзина
-                </label>
+            <input class="checkbox" type="checkbox" name="features-1" id="features-1" checked>
+            <label class="label-checkbox" for="features-1">
+              Слайдер
+            </label>
+            <input class="checkbox" type="checkbox" name="features-2" id="features-2">
+            <label class="label-checkbox" for="features-2">
+                Блок преимуществ
+            </label>
+            <input class="checkbox" type="checkbox" name="features-3" id="features-3" checked>
+            <label class="label-checkbox" for="features-3">
+              Новости
+            </label>
+            <input class="checkbox" type="checkbox" name="features-4" id="features-4">
+            <label class="label-checkbox" for="features-4">
+                    Галерея
+            </label>
+            <input class="checkbox" type="checkbox" name="features-5" id="features-5">
+            <label class="label-checkbox" for="features-5">
+                    Корзина
+            </label>
           </div>
         </fieldset>
         <button type="submit" class="btn btn-gray">Показать</button>
@@ -111,7 +119,7 @@
       <section class="items">
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-sedona.jpg" width="358" height="574" alt="Sedona">
+          <img src="img/img-sedona.jpg" width="360" height="574" alt="Sedona">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Sedona</p>
@@ -122,7 +130,7 @@
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-pink.jpg" width="358" height="574" alt="Pink app">
+          <img src="img/img-pink.jpg" width="360" height="574" alt="Pink app">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Pink app</p>
@@ -133,7 +141,7 @@
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-barbershop.jpg" width="358" height="574" alt="Barbershop">
+          <img src="img/img-barbershop.jpg" width="360" height="574" alt="Barbershop">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Barbershop</p>
@@ -144,7 +152,7 @@
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-mishka.jpg" width="358" height="574" alt="Mishka">
+          <img src="img/img-mishka.jpg" width="360" height="574" alt="Mishka">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Mishka</p>
@@ -155,7 +163,7 @@
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-aplus.jpg" width="358" height="574" alt="A plus">
+          <img src="img/img-aplus.jpg" width="360" height="574" alt="A plus">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">A plus</p>
@@ -166,7 +174,7 @@
         </section>
         <section class="item-card">
           <img src="img/browser.svg" width="360px" height="40px" class="browser">
-          <img src="img/img-kvast.jpg" width="358" height="574" alt="Кваст">
+          <img src="img/img-kvast.jpg" width="360" height="574" alt="Кваст">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Кваст</p>
