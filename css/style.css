@@ -179,7 +179,7 @@ a {
   margin-left: 535px;
 }
 
-.slide-controls div {
+.slide-control {
   margin-top: -115px;
   background-color: #ffffff;
   width: 18px;
@@ -189,13 +189,15 @@ a {
 }
 
 .active-slide-control {
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
   border-color: #c1c1c1;
+  background-color: #ffffff;
   z-index: 250;
+  margin: 5px 5px;
 }
 
 .services {
