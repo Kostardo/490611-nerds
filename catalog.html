@@ -19,20 +19,16 @@
         <ul class="site-navigation">
           <li class="item-list"><a href="about.html">Студия</a></li>
           <li class="item-list"><a href="clients.html">Клиенты</a></li>
-          <div class="activated">
-            <li class="item-list"><a href="catalog.html">Магазин</a></li>
-            <div class="shop-active"></div>
-          </div>
+          <li class="item-list active"><a href="catalog.html">Магазин</a></li>
           <li class="item-list"><a href="contacts.html">Контакты</a></li>
           <li class="item-list cart"><a href="cart.html">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="catalog-title">
-        <h1 class="shop-title">Магазин готовых шаблонов</h1>
-      </div>
+    <div class="catalog-title">
+      <h1 class="shop-title">Магазин готовых шаблонов</h1>
+    </div>
   </div>
   <div class="container-catalog">
     <div class="left-column">
@@ -64,7 +60,7 @@
             <label class="label-radio" for="adaptiv">
                 <span>Адаптивная</span>
             </label>
-            <input type="radio" name="type-site" value="fixed" id="fixed">
+            <input type="radio" disabled name="type-site" value="fixed" id="fixed">
             <label class="label-radio" for="fixed">
                 <span>Фиксировнная</span>
             </label>
@@ -117,7 +113,6 @@
       </section>
       <section class="items">
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-sedona.jpg" width="360" height="574" alt="Sedona">
           <div class="item-description">
             <div class="description-field">
@@ -128,7 +123,6 @@
           </div>
         </section>
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-pink.jpg" width="360" height="574" alt="Pink app">
           <div class="item-description">
             <div class="description-field">
@@ -139,7 +133,6 @@
           </div>
         </section>
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-barbershop.jpg" width="360" height="574" alt="Barbershop">
           <div class="item-description">
             <div class="description-field">
@@ -150,7 +143,6 @@
           </div>
         </section>
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-mishka.jpg" width="360" height="574" alt="Mishka">
           <div class="item-description">
             <div class="description-field">
@@ -161,7 +153,6 @@
           </div>
         </section>
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-aplus.jpg" width="360" height="574" alt="A plus">
           <div class="item-description">
             <div class="description-field">
@@ -172,14 +163,14 @@
           </div>
         </section>
         <section class="item-card">
-          <img src="img/browser.svg" width="360px" height="40px" class="browser">
           <img src="img/img-kvast.jpg" width="360" height="574" alt="Кваст">
           <div class="item-description">
             <div class="description-field">
               <p class="item-title">Кваст</p>
               <p class="item-text">Промо-сайт производителя крафтового кваса</p>
               <a href="#" class="item-btn btn">9 900 руб.</a>
-            </div </div>
+            </div>
+          </div>
         </section>
       </section>
       <section class="pages">
@@ -189,50 +180,49 @@
         <a href="#" class="page-next">Следующая</a>
       </section>
     </section>
-    </div>
-    </main>
-    <section class="map">
-      <section class="map">
-        <div class="contacts">
-          <section class="contacts-up">
-            <p class="contacts-name">Nёrds design studio</p>
-            <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn-red btn feedback-btn">Напишите нам</a>
-        </div>
-        </section>
-        <div class="map-marker"></div>
-      </section>
-      <footer class="footer">
-        <section class="social">
-          <ul class="social-list">
-            <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15" class="vk"></a></li>
-            <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22" class="fb"></a></li>
-            <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
-          </ul>
-        </section>
-        <section class="friendship">
-          <p class="friendship-title">Давайте дружить, это выгодно!</p>
-          <p class="friendship-text">Скидка 10% для друзей из социальных сетей.</p>
-        </section>
-      </footer>
-      <section class="feedback">
-        <div class="feedback-content">
-          <h2 class="feedback-title">Напишите нам</h2>
-          <button class="feedback-close" type="button"></button>
-          <form action="#" method="post">
-            <div class="about-user">
-              <label for="login-field"><span>Вашe имя:</span>
+  </div>
+  <section class="map">
+    <section class="contacts">
+      <div class="contacts-up">
+        <p class="contacts-name">Nёrds design studio</p>
+        <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+        <a href="#" class="btn-red btn feedback-btn">Напишите нам</a>
+      </div>
+    </section>
+    <div class="map-marker"></div>
+  </section>
+  <footer class="footer">
+    <section class="social">
+      <ul class="social-list">
+        <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15" class="vk"></a></li>
+        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22" class="fb"></a></li>
+        <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
+      </ul>
+    </section>
+    <section class="friendship">
+      <p class="friendship-title">Давайте дружить, это выгодно!</p>
+      <p class="friendship-text">Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+  <section class="feedback">
+    <div class="feedback-content">
+      <h2 class="feedback-title">Напишите нам</h2>
+      <button class="feedback-close" type="button"></button>
+      <form action="#" method="post">
+        <div class="about-user">
+          <label for="login-field"><span>Вашe имя:</span>
                <input type="text" name="login" id="login-field" placeholder="Представьтесь пожалуйста" class="feedback-name"></label>
-              <label for="mail-field"><span>Ваш e-mail:</span>
+          <label for="mail-field"><span>Ваш e-mail:</span>
                <input type="text" name="e-mail" id="mail-field" placeholder="Для отправки ответа" class="feedback-email"></label><br>
-            </div>
-            <label for="message-field"><span>Текст письма:</span>
-    				<textarea id="message-field" name="message" rows="10" cols="10" placeholder="В свободной форме" class="feedback-message"></textarea></label><br>
-            <button type="submit" class="btn btn-red">Отправить</button>
-          </form>
         </div>
-      </section>
-      <script src="js/popup.js"></script>
+        <label for="message-field"><span>Текст письма:</span>
+        <textarea id="message-field" name="message" rows="10" cols="10" placeholder="В свободной форме" class="feedback-message"></textarea></label><br>
+        <button type="submit" class="btn btn-red">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <script src="js/popup.js"></script>
 </body>
-  </html>
+
+</html>

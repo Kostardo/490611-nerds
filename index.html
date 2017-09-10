@@ -13,8 +13,8 @@
   <div class="first-container">
     <header class="main-header">
       <a href="#" class="main-header-logo">
-      <img src="img/nerds-logo.svg" alt="Логотип студии Nёrds">
-    </a>
+         <img src="img/nerds-logo.svg" alt="Логотип студии Nёrds">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="item-list"><a href="about.html">Студия</a></li>
@@ -25,31 +25,32 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <h1 class="visually-hidden">Студия Nёrds</h1>
-      <section class="slider">
-        <div class="first-slide slide">
-          <p class="slide-title">Долго, дорого, скрупулезно.</p>
-          <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
+    <h1 class="visually-hidden">Студия Nёrds</h1>
+    <section class="slider">
+      <div class="first-slide slide">
+        <p class="slide-title">Долго, дорого, скрупулезно.</p>
+        <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+        <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
+      </div>
+      <div class="second-slide slide visually-hidden">
+        <p class="second-slide-title slide-title">Любим математику как никто другой.</p>
+        <p class="second-slide-text slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+        <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
+      </div>
+      <div class="third-slide slide visually-hidden">
+        <p class="third-slide-title slide-title">Только ночь, только хардкор.</p>
+        <p class="slide-text third-slide-text">Работать днем, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
+        <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
+      </div>
+      <div class="slide-controls">
+        <div class="slide-control slide-control-first">
+          <div class="active-slide-control"></div>
         </div>
-        <div class="second-slide slide visually-hidden">
-          <p class="second-slide-title slide-title">Любим математику как никто другой.</p>
-          <p class="second-slide-text slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-          <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
-        </div>
-        <div class="third-slide slide visually-hidden">
-          <p class="third-slide-title slide-title">Только ночь, только хардкор.</p>
-          <p class="slide-text third-slide-text">Работать днем, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
-          <a href="#" class="btn-red btn slide-btn">Узнать больше</a>
-        </div>
-        <div class="slide-controls">
-          <div class="slide-control slide-control-first"><div class="active-slide-control"></div></div>
-          <div class="slide-control slide-control-second"></div>
-          <div class="slide-control slide-control-third"></div>
-        </div>
+        <div class="slide-control slide-control-second"></div>
+        <div class="slide-control slide-control-third"></div>
+      </div>
+    </section>
   </div>
-  </section>
   <section class="services">
     <ul class="services-list">
       <li class="services-block sites">
@@ -105,16 +106,15 @@
     <a href="#" class="portfolio-img"><img src="img/logo-3.png" alt="Оптика «PINK»"></a>
     <a href="#" class="portfolio-img"><img src="img/logo-4.png" alt="«MISHKA»"></a>
   </section>
-  </main>
   <section class="map">
-    <div class="contacts">
-      <section class="contacts-up">
+    <section class="contacts">
+      <div class="contacts-up">
         <p class="contacts-name">Nёrds design studio</p>
         <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
         <a href="#" class="btn-red btn feedback-btn">Напишите нам</a>
-    </div>
-    <div class="map-marker"></div>
+      </div>
+      <div class="map-marker"></div>
     </section>
   </section>
   <footer class="footer">
@@ -137,16 +137,17 @@
       <form action="#" method="post">
         <div class="about-user">
           <label for="login-field"><span>Вашe имя:</span>
-           <input type="text" name="login" id="login-field" placeholder="Представьтесь пожалуйста" class="feedback-name"></label>
+           <input type="text" name="login" id="login-field" placeholder="Представьтесь пожалуйста" class="feedback-name error"></label>
           <label for="mail-field"><span>Ваш e-mail:</span>
            <input type="text" name="e-mail" id="mail-field" placeholder="Для отправки ответа" class="feedback-email"></label><br>
         </div>
         <label for="message-field"><span>Текст письма:</span>
-				<textarea id="message-field" name="message" placeholder="В свободной форме" class="feedback-message"></textarea></label><br>
+           <textarea id="message-field" name="message" placeholder="В свободной форме" class="feedback-message"></textarea></label><br>
         <button type="submit" class="btn btn-red">Отправить</button>
       </form>
     </div>
   </section>
   <script src="js/popup.js"></script>
 </body>
+
 </html>
