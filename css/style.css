@@ -988,7 +988,7 @@ a {
   box-sizing: border-box;
   margin-right: 40px;
   height: 47px;
-  width: 356px;
+  width: 360px;
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 1);
@@ -1009,6 +1009,16 @@ a {
   vertical-align: top;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  resize: none;
+}
+
+.feedback span {
+  margin-bottom: 13px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding-left: 13px;
 }
 
 .about-user {
@@ -1041,6 +1051,7 @@ a {
 .feedback-close:focus {
   opacity: 1;
 }
+
 .feedback-close:active {
   opacity: 0.1;
 }
