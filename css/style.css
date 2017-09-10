@@ -605,6 +605,7 @@ a {
   display: flex;
   flex-flow: column;
 }
+
 .shop-active {
   width: 74px;
   height: 2px;
@@ -979,14 +980,13 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  padding: 0 40px;
   margin-top: 31px;
 }
 
 .feedback-active input[type="text"] {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0;
+  margin-right: 40px;
   height: 47px;
   width: 356px;
   font-size: 16px;
@@ -1000,7 +1000,7 @@ a {
 .feedback-active textarea {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   height: 114px;
   width: 760px;
   font-size: 16px;
@@ -1013,16 +1013,14 @@ a {
 
 .about-user {
   display: flex;
-  margin-right: 40px;
 }
 
 .feedback-title {
-  padding: 0 40px;
   margin-top: 74px;
 }
 
 .feedback-content {
-  width: 840px;
+  width: 760px;
   margin: 0 auto;
 }
 
@@ -1035,7 +1033,7 @@ a {
   border: 0;
   opacity: 0.2;
   position: absolute;
-  margin-left: 790px;
+  margin-left: 750px;
   margin-top: -70px;
 }
 
@@ -1045,8 +1043,4 @@ a {
 }
 .feedback-close:active {
   opacity: 0.1;
-}
-
-.feedback .btn {
-  margin-left: 40px;
 }
